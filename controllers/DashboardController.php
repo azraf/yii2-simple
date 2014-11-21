@@ -4,7 +4,7 @@ namespace app\controllers;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
-use azraf\simple\extendible\WebThemesController as Controller;
+use azraf\simpleapp\classes\SimpleController as Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use mdm\admin\models\searchs\AuthItem as AuthItemSearch;
