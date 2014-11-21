@@ -1,0 +1,12 @@
+# Turning on the rewrite engine is necessary for the following rules and features.
+# FollowSymLinks must be enabled for this to work.
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+</IfModule>
+# Unless an explicit file or directory exists, redirect all request to Yii entry script
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+</IfModule>

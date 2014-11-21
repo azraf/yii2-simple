@@ -10,8 +10,7 @@ $config = [
         'user' => [
             'class' => 'dektrium\user\Module',
             'controllerMap' => [
-                'security' => '@simpleClass\SecurityController',
-//                'profile' => '@simpleClass\ProfileController',
+                'security' => 'app\controllers\SecurityController',
             ],
             'enableConfirmation' => false,
             'confirmWithin' => 21600,
@@ -57,11 +56,15 @@ $config = [
             'assignmentFile' => '/commands/data/assignments.php', //Default path to assignments.php | NEW CONFIGURATIONS
 	    'ruleFile' => '/commands/data/rules.php', //Default path to rules.php | NEW CONFIGURATIONS
         ],
-        'user' => [
-            'identityClass' => 'dektrium\user\models\User',
-        ],
+//        'user' => [
+//            'identityClass' => 'dektrium\user\models\User',
+//        ],
         'wtsecure' => [
-            'class' =>  '@simpleClass\WtSecurity',
+            'class' =>  '@simpleClass\SimpleSecurity',
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',

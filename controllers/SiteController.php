@@ -74,15 +74,7 @@ class SiteController extends Controller
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-
-        $model = new RegistrationForm();
-        if ($model->load(Yii::$app->request->post())) {
-            return $this->goBack();
-        } else {
-            return $this->render('/user/registration/register', [
-                'model' => $model,
-            ]);
-        }
+        return $this->redirect(['/user/registration/register']);
     }
 
     public function actionLogout()
