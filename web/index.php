@@ -7,8 +7,8 @@ defined('YII_ENV') or define('YII_ENV', 'dev');
 require(__DIR__ . '/../vendor/autoload.php');
 require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
-Yii::setAlias('@simpleApp', 'vendor/azraf/simple');
-Yii::setAlias('@simpleClass', 'vendor/azraf/simple/extendible');
+Yii::setAlias('@simpleApp', 'vendor/azraf/simpleapp');
+Yii::setAlias('@simpleClass', 'vendor/azraf/simpleapp/classes');
 
 $config = require(__DIR__ . '/../config/web.php');
 
