@@ -35,14 +35,14 @@ $config = [
                 ],
 //                'route' => null, // disable menu
                 'route' => [
-                    'label' => 'Route' // change label
+                    'label' => 'Route'
                 ]
             ],
         ],
     ],
     'components' => [
         'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            // this is required by cookie validation
             'cookieValidationKey' => '1upyWl1e2z6H3sCnwgv2zqDNkRE5OVqg',
         ],
         'cache' => [
@@ -56,15 +56,15 @@ $config = [
             'assignmentFile' => '/commands/data/assignments.php', //Default path to assignments.php | NEW CONFIGURATIONS
 	    'ruleFile' => '/commands/data/rules.php', //Default path to rules.php | NEW CONFIGURATIONS
         ],
-//        'user' => [
-//            'identityClass' => 'dektrium\user\models\User',
-//        ],
+        'user' => [
+            'identityClass' => 'dektrium\user\models\User',
+        ],
         'wtsecure' => [
             'class' =>  '@simpleClass\SimpleSecurity',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'showScriptName' => true, // If you want to hide `index.php` from URL, make it false and set a .htaccess file
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -98,6 +98,27 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+    ],
+    'as access' => [
+        'class' => 'mdm\admin\components\AccessControl',
+        'allowActions' => [
+//            'admin/*',  // ::: IMPORTANT :::: Make it disable after configuring the USER Roles/Permissions
+            'user/index', // add or remove allowed actions to this list
+            'user/login', // add or remove allowed actions to this list
+            'user/security/login', // add or remove allowed actions to this list
+            'user/logout', // add or remove allowed actions to this list
+            'user/security/logout', // add or remove allowed actions to this list
+            'user/register', // add or remove allowed actions to this list
+            'user/registration/register', // add or remove allowed actions to this list
+            'user/registration/confirm', // add or remove allowed actions to this list
+            'user/registration/resend', // add or remove allowed actions to this list
+            'user/registration/connect', // add or remove allowed actions to this list
+            
+            'site/index',
+            'site/about',
+            'site/contact',
+            'site/login'
+            ]
     ],
     'params' => $params,
 ];
