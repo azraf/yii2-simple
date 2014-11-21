@@ -18,6 +18,7 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
 		"yiisoft/yii2-jui": "*",
+		"azraf/yii2-simpleapp": "*",
 		"mdmsoft/yii2-admin": "*",
 		"mdmsoft/yii2-upload-file": "*",
 		"dektrium/yii2-user": "*",
