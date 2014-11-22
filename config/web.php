@@ -117,6 +117,7 @@ $config = [
             'site/index',
             'site/about',
             'site/contact',
+            'site/signup',
             'site/login'
             ]
     ],
