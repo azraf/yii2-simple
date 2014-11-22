@@ -102,7 +102,7 @@ $config = [
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            'admin/*',  // ::: IMPORTANT :::: Make it disable after configuring the USER Roles/Permissions
+        //    'admin/*',  // ::: IMPORTANT :::: Make it disable after configuring the USER Roles/Permissions
             'user/index', // add or remove allowed actions to this list
             'user/login', // add or remove allowed actions to this list
             'user/security/login', // add or remove allowed actions to this list
