@@ -130,7 +130,7 @@ $config = [
             'site/about',
             'site/contact',
             'site/signup',
-			'site/logout',
+            'site/logout',
             'site/login'
             ]
     ],
