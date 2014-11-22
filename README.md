@@ -49,6 +49,7 @@ After installation complete, please:
 3. Configure Yii2-admin as your need, set Permission/Roles and assign them to User
 
 4. After configuration complete, comment out the line again in your configuration
+
 //    'admin/*',  // ::: IMPORTANT :::: Make it disable after configuring the USER Roles/Permissions
 
 
