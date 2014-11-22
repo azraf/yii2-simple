@@ -11,15 +11,6 @@ use mdm\admin\models\searchs\AuthItem as AuthItemSearch;
 use yii\rbac\Item;
 use app\models\RegistrationForm;
 
-//use mdm\admin\models\searchs\Assignment;
-
-//use yii\rbac\PhpManager;
-//use dektrium\user\models\User;
-//use yii\web\User;
-
-/**
- * Site controller
- */
 class DashboardController extends Controller
 {
     public $testParams;
@@ -54,11 +45,6 @@ class DashboardController extends Controller
         ];
     }
 
-//    public function __construct() {
-//        parent::__construct();
-//        
-//    }
-    
    public function init()
     {
         parent::init();
@@ -92,17 +78,8 @@ class DashboardController extends Controller
     {
         $this->d($this->wtParams,'$this->wtParams');
         return $this->wtRender('dashboard-full');
-//        return $this->wtRender('dashboard-full');
     }
     
-    public function actionProfile()
-    {
-        $this->d($this->profile(),'$this->profile');
-//        return $this->wtRender('dashboard-full');
-//        return $this->wtRender('dashboard-full');
-    }
-
-
     public function actionLogout()
     {
         Yii::$app->user->logout();
