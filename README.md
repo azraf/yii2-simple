@@ -43,9 +43,13 @@ After installation complete, please:
       'class' => 'mdm\admin\components\AccessControl',
       'allowActions' => [
       //    'admin/*',  // ::: IMPORTANT :::: Make it disable after configuring the USER Roles/Permissions
+
 2. Then browse to `http://[YOUR-APPLICATION-PATH]/admin/` in your browser
+
 3. Configure Yii2-admin as your need, set Permission/Roles and assign them to User
+
 4. After configuration complete, comment out the line again in your configuration
 //    'admin/*',  // ::: IMPORTANT :::: Make it disable after configuring the USER Roles/Permissions
+
 
 Now you all set!
