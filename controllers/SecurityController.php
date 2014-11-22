@@ -20,12 +20,9 @@ class SecurityController extends BaseSecurityController
      */
     public function actionLogin()
     {
-//        echo '<h1>Test Here</h1>';
         $model = $this->module->manager->createLoginForm();
 
         if ($model->load(\Yii::$app->getRequest()->post()) && $model->login()) {
-//            $session = Yii::$app->session;
-//            $session->set('language', 'bn-BD');
             Yii::$app->view->params['user'] = [
                                                 'loggedIn'=>true,
                                                 Yii::$app->wtsecure->sessionUserInfoTag => [
