@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use dektrium\user\controllers\SecurityController as BaseSecurityController;
-use azraf\simple\extendible\SimpleController as Simple;
+use azraf\simpleapp\classes\SimpleController as Simple;
 
 class SecurityController extends BaseSecurityController
 {
