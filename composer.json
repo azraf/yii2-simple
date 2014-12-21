@@ -17,10 +17,8 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
-	"yiisoft/yii2-jui": "*",
 	"azraf/yii2-simpleapp": ">=0.2",
 	"mdmsoft/yii2-admin": "*",
-	"mdmsoft/yii2-upload-file": "*",
 	"dektrium/yii2-user": "*",
         "yiisoft/yii2-swiftmailer": "*"
     },
