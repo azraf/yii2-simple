@@ -60,7 +60,7 @@ $config = [
             'identityClass' => 'dektrium\user\models\User',
         ],
         'wtsecure' => [
-            'class' =>  '@simpleClass\SimpleSecurity',
+            'class' =>  '@azraf/simpleapp/classes/SimpleSecurity',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -93,7 +93,7 @@ $config = [
         'view' => [
             'theme' => [
                 'pathMap' => [
-                    '@dektrium/user/views' => '/views/user'
+                    '@dektrium/user/views' => '@app/views/user'
                 ],
             ],
         ],
