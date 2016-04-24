@@ -29,7 +29,7 @@ The minimum requirement by this application template that your Web server suppor
 INSTALLATION AND DOCUMENTATION
 ------------------------------
 
-Please check http://blog.makewebsmart.com/yii2-simpleapp-with-yii2-admin-user-adminlte-and-few-more/234 for documentation.
+Please check http://makewebsmart.com/blog/yii2-simpleapp-with-yii2-admin-user-adminlte-and-few-more/234 for documentation.
 
 
 IMPORTANT :
